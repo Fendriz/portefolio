@@ -1,0 +1,79 @@
+#h1__orange{
+    color:#FFC46D;
+}
+#h1_white{
+    color:white;
+}
+.frontpage_animation{
+    margin-top: 30px;
+}
+
+.triangle_left {
+    width: 45%;
+    margin-right: 5px;
+    height: 0;
+    display: inline-block;
+    position: relative;
+    top:0;
+    animation-name: example;
+    animation-duration: 3s;
+    border-top: 25px solid transparent;
+    border-right: 50px solid white;
+    border-bottom: 25px solid transparent;
+  }
+
+.triangle_right {
+    width: 45%;
+    margin-left: 5px;
+    height: 0;
+    top:0;
+    display: inline-block;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 3s;
+    border-top: 25px solid transparent;
+    border-left: 50px solid #FFC46D;
+    border-bottom: 25px solid transparent;
+  }
+
+.frontpage{
+    
+    opacity: 0;
+    animation-delay: 2.5s;
+    animation-name: example3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+.center {
+    height: calc(100vh);
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+}
+
+#home{
+    width: 100vw;
+    display: table;
+    width:100%;
+    text-align: center;
+    background-color: #1A1A1A;
+      
+}
+
+@keyframes example {
+    0%   {left:0; top:-170px; opacity: 1}
+    70%  {opacity: 1}
+    100% {left:-330px; top:-170px; opacity: 0}
+  }
+
+  @keyframes example2 {
+    0%   {left:0; top:-170px; opacity: 1}
+    70%   {opacity: 1}
+    100% {left:330px; top:-170px; opacity: 0}
+  }
+
+  @keyframes example3 {
+    0%   {opacity: 0}
+    100% {opacity: 1}
+  }
+

@@ -1,0 +1,20 @@
+$dark_background:#1A1A1A;
+$light-background:#3D3D3D;
+$links:#137B9B;
+$orange:#FFC46D;
+
+$white:#FFFFFF;
+$gray:#5B5B5B;
+$blue:#082841;
+$red:#FF6D6D;
+$greed:#AFD33C;
+$purple:#8101A0;
+
+@import "partials/header";
+@import "partials/about";
+@import "partials/carousel";
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/general";
+@import "partials/home";
+@import "partials/responsive";

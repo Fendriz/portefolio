@@ -1,0 +1,55 @@
+
+#img_portrait{
+    width: 748px;
+}
+.about_col1{
+    display: inline-block;
+    width: 44%;
+    margin-right: 20px;
+    vertical-align: top;
+    margin-top: 20px;
+}
+.about_col2{
+    display: inline-block;
+    width: 44%;
+    margin-left: 20px;
+    vertical-align: top;
+    margin-top: 20px;
+
+}
+#about h3{
+    padding-bottom: 10px;
+}
+#about{
+    padding: 50px 0;
+    text-align: center;
+}
+#about h2 {
+    padding-bottom: 20px;;
+}
+
+.about_col3 p{
+  margin-top: 20px;
+}
+#about p {
+    text-align: left;;
+}
+#about .skills p {
+    text-align: center;;
+}
+
+#about a {
+    cursor: pointer;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills p {
+    padding: 10px 0;
+    width: 100px;
+    background-color: #137B9B;;
+    color:white;
+}

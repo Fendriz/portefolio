@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>January Island Escapes - Welcome</title>
+	<meta name="descriptions" content="Portefolio Frontend development, Portefolio, Portefolio Torgeir Haugum">
+	<title>Portefolio Torgeir - Welcome</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="SASS/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;669;700;800;900&display=swap" rel="stylesheet">
@@ -15,11 +16,14 @@
 <body>
 	<header class="container-fluid">
 		<nav class="row navigation">
+			<div class="hamburger">
+				<i class="fas fa-bars"></i>
+			</div>
 	  		<div class="navigation__links">
-				<a id="navigation__links-active" href="#">Home</a>
-				<a href="packages.html">About Me</a>
-				<a href="contact.html">Portefolio</a>
-				<a href="contact.html">Contact</a>		
+				<a class="navigation__links-active" id="navigation__links-home" onclick="home()">Home</a>
+				<a class="navigation__links-default" id="navigation__links-about" onclick="about()">About Me</a>
+				<a class="navigation__links-default" id="navigation__links-port" onclick="portefolio()">Portefolio</a>
+				<a class="navigation__links-default" id="navigation__links-contact" onclick="contact()">Contact</a>	
 	  		</div>
 		</nav>
 	</header>
@@ -27,32 +31,24 @@
 		<div id="home">
 			<div class="center">
 				<div class="frontpage">
-					
 					<h1><span id="h1_white">I'm</span> <span id="h1__orange">Torgeir</span></h1>
 					<h4>A web developer</h4>
-					<!-- <button></button> -->
+					<button type="button" class="btn btn-primary" onclick="portefolio()">VIEW MY WORK </button>
 				</div>
 				<div class="frontpage_animation">
 					<div id="white_triangle" class="triangle_left"></div>
 					<div id="orange_triangle" class="triangle_right"></div>
 				</div>
 			</div>
-			
-			
-		
-	
 		</div>
 		<div class="container">
 			<div id="about">
 				<div class="about_col3">
 					<h2>ABOUT ME</h2>
-					<img id="img_portrait"src="img/icon/portrait4.png" alt="banner1">
+					<img id="img_portrait" src="img/icon/portrait.png" alt="banner1">
 					<p>I'm a web designer / developer based in Grimstad, Norway. I have a passion for web design and love to create for web and mobile devices.
 					</p>
 				</div>
-				
-				
-			
 					<div class="about_col1">
 						<h3>My Skills</h3>
 						<div class="skills">
@@ -67,38 +63,105 @@
 					</div>
 					<div class="about_col2">
 						<h3>I can help</h3>
-						<h5>I'm currently avalibe for freelance work</h5>
-						<p>If you have a project and need my help don't hestite to <a href="">contact me!</a></p>
+						<p>I'm currently avalibe for freelance work!</p>
+						<p>If you have a project and need my help don't hestite to <a onclick="contact()"><b>contact me!</b></a></p>
 					</div>
-
-				
-				
-				
-	
+				</div>
 			</div>
-			
-
-		</div>
 		<div id="enkelcarussel" class="carousel slide" data-ride="carousel">
-			<h2>PORTEFOLIO</h2>
+				<div class="portefolio">
+					<h2>PORTEFOLIO</h2>
+					<p>My Portefolio during Front End Development at the Noroff school in Norway. Check my progression during the School year!</p>
+				</div>
 			<ol class="carousel-indicators">
 				<li data-target="#enkelcarussel" data-slide-to="0" class="active"></li>
 				<li data-target="#enkelcarussel" data-slide-to="1"></li>
 				<li data-target="#enkelcarussel" data-slide-to="2"></li>
+				<li data-target="#enkelcarussel" data-slide-to="3"></li>
+				<li data-target="#enkelcarussel" data-slide-to="4"></li>
+				<li data-target="#enkelcarussel" data-slide-to="6"></li>
 			</ol>
 			<div class="carousel-inner">
-				
-				<div class="item active">
+				<div class="item " id="item6">
+					<div class="subject">
+						<h3>Design 1</h3>
+						<p>Check out the Style Tile i created for this Italian pizzeria. This style tyle is created with Adobe Illustrator and Photoshop</p>
+					</div>
+					<a href="http://gather.no/redpepperpizza/"><img src="img/desing1.png" alt="banner1"></a>
 					
-					<img src="img/spacex.jpg" alt="banner1">
+					<div class="skills">
+					
+						<p>Illustrator</p>
+						<p>Photoshop</p>
+					</div>
 				</div>
-
-				<div class="item">
-					<img src="img/museum.jpg" alt="banner2">
+				<div class="item " id="item1">
+					<div class="subject">
+						<h3>Communication Technolgy</h3>
+						<p>Check out my redesign of Booking.com. This pdf is created with Adobe Illustrator and Photoshop</p>
+					</div>
+					<a href="http://gather.no/rapport/09-28-2019_Torgeir_Haugum_WCT_CA.pdf"><img src="img/webcom.png" alt="banner2"></a>
+					<div class="skills">
+						<p>Illustrator</p>
+						<p>Photoshop</p>
+					</div>
 				</div>
-
-				<div class="item">
-					<img src="img/boardgame.jpg" alt="banner3">
+				<div class="item" id="item2">
+					<div class="subject">
+						<h3>HTML AND CSS</h3>
+						<p>This a website for a fictive comany called Re-Cycle. Logo, Design and implementation done by me.</p>
+					</div>
+					<a href="http://gather.no/recycleNew/"><img src="img/recycle.png" alt="banner3"></a>
+					<div class="skills">
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>Illustrator</p>
+						<p>Photoshop</p>
+					</div>
+				</div>
+				<div class="item" id="item3">
+					<div class="subject">
+						<h3>Semester Project 1</h3>
+						<p>This is a website for an fictive interactive science museum. Logo, Design and implementation done by me. </p>
+					</div>
+					<a href="http://gather.no/museumNew/"><img src="img/museum.png" alt="banner4"></a>
+					
+					<div class="skills">
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>Illustrator</p>
+						<p>Photoshop</p>
+					</div>
+				</div>
+				<div class="item active" id="item4">
+					<div class="subject">
+						<h3>Project Exam 1</h3>
+						<p>Check out this miccro site for SpaceX! This site connects to SpaceX API so you can get information about all their flights into Space! Logo from SpaceX. Design and implementation by me.</p>
+					</div>
+					<a href="http://gather.no/spaceX/"><img src="img/spaceX.png" alt="banner5"></a>
+					 <div class="skills">
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>Adobe XD</p>
+						<p>Illustrator</p>
+						<p>Photoshop</p>
+						<p>JavaScript</p>
+					</div>
+				</div>
+				<div class="item" id="item5">
+					<div class="subject">
+						<h3>Semester Project 2</h3>
+						<p>The task for this Project was to create a simple board game for Game of Thrones. Check out my implementation!</p>
+					</div>
+					<a href="http://gather.no/gotr/"><img src="img/boardgame.png" alt="banner6"></a>
+					<div class="skills">
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>Adobe XD</p>
+						<p>Illustrator</p>
+						<p>Photoshop</p>
+						<p>JavaScript</p>
+					</div>
 				</div>
 			</div>
 				<a class="left carousel-control" href="#enkelcarussel" data-slide="prev">
@@ -110,11 +173,9 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		
-	
-			<div class="contact-wrapper">
+		<div class="light-background">
+			<div class="container">
 				<section id="contact">
-
 					<h2>CONTACT</h2>
 					<p>Have a Question or want to work together?</p>
 					<form id="contact-form">
@@ -140,12 +201,19 @@
 					</form>
 				</section>
 			</div>
-
-		
-		
+		</div>
 	</main>
 	<footer>
-		<p>Copyright &copy; 2019</p>
+		<div class="container">
+			<section class ="sosial-media">
+				<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://github.com/Fendriz" target="_blank"><i class="fab fa-github"></i></a>
+			</section>
+		</div>
+		<p>Copyright <span>&copy; 2020</span></p>
 	</footer>
+	<script src="script/script.js"></script>
 </body>
 </html>

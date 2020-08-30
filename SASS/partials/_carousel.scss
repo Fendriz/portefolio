@@ -1,0 +1,137 @@
+#item1 {
+    background-color: #EAF1F8;
+}
+
+#item1 .skills p {
+    background-color: #082841;
+}
+#item6 {
+    background-color: #F8EFEA;
+}
+
+#item6 .skills p {
+    background-color: #464646;
+}
+
+#item2 {
+    background-color: #F2F8EA;
+}
+
+#item2 .skills p {
+    background-color: #AFD33C
+}
+
+#item3 {
+    background-color: #F3EAF8;
+}
+#item3 .skills p {
+    background-color: #8101A0
+}
+
+#item4 {
+    background-color: #F1E8DB;
+}
+#item4 .skills p {
+    background-color: #FFC46D;
+}
+
+
+#item5 {
+    background-color: #F9E5E5;
+}
+#item5 .skills p {
+    background-color: #FF6D6D;
+}
+.item .skills {
+    width: 750px;
+    margin: 0 auto;
+    justify-content: left;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.item .skills p {
+    margin:5px;
+    background-color: #137B9B;;
+    color:white
+}
+
+.item .subject{
+    width: 750px;
+    margin: 0 auto 30px auto;
+
+}
+.carousel-inner>.item>a>img {
+
+   
+    width: 750px;
+    margin:0 auto;
+}
+.carousel-inner>.item{
+    /* padding-top:150px;
+    padding-bottom: 50px;; */
+
+    padding: 220px 17% 100px 17%;
+    
+}
+
+
+
+/* .carousel-inner h1 {
+
+    position: relative;
+    top: 200px;
+    z-index: 700;
+} */
+#enkelcarussel p {
+    text-align: left;
+}
+#enkelcarussel .skills p {
+    text-align: center;
+}
+
+.carousel-control.left,.carousel-control.right {
+        background-image: none;
+}
+
+.carousel-control {
+    color: #5B5B5B;
+}
+
+.carousel-indicators{
+    color: #5B5B5B;
+}
+
+.carousel-indicators:active{
+    color: #5B5B5B;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #5B5B5B;
+    border: 1px solid #5B5B5B;
+    border-radius: 10px;
+}
+
+.carousel-indicators .active {
+    background-color: transparent;
+}
+
+#enkelcarussel{
+    text-align: center;
+}
+.portefolio h2 {
+    padding-bottom: 20px;
+}
+.portefolio{
+    width: 750px;
+    margin:0 auto;
+    position: relative;
+    top:170px;
+    z-index: 100;
+}
+

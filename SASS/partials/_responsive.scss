@@ -1,0 +1,153 @@
+.hamburger {
+    display: none;
+    padding:10px;
+}
+
+.hamburger .fas{
+    padding:5px;
+    color:$white;
+    background-color: $links;
+    font-size: 25px;
+}
+@media (max-width: 1170px ){
+    .item .skills {
+        width: 100%;
+        justify-content: center;
+    }
+    .item .subject{
+        width: 100%;
+    }
+    .portefolio{
+        padding-left: 20px;
+        padding-right: 20px;
+        width:70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+}
+@media (max-width: 790px ){
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 30px;
+
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    #enkelcarussel .skills p {
+        width: 80px;
+        font-size: 14px;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+    .btn-primary {
+     
+        width: 150px;
+        font-size: 16px;
+    }
+    .triangle_left {
+     
+        border-top: 15px solid transparent;
+        border-right: 30px solid white;
+        border-bottom: 15px solid transparent;
+    }
+
+    .triangle_right {
+      
+        border-top: 15px solid transparent;
+        border-left: 30px solid #FFC46D;
+        border-bottom: 15px solid transparent;
+    }
+
+    @keyframes example {
+        0%   {left:0; top:-170px; opacity: 1}
+        70%  {opacity: 1}
+        100% {left:-180px; top:-170px; opacity: 0}
+      }
+    
+      @keyframes example2 {
+        0%   {left:0; top:-170px; opacity: 1}
+        70%   {opacity: 1}
+        100% {left:180px; top:-170px; opacity: 0}
+      }
+
+    .hamburger {
+        display: block;
+        border-bottom: 2px solid #FFC46D;
+        text-align: right;
+    }
+    .hamburger:hover{
+        cursor: pointer;
+    }
+    .navigation .navigation__links {
+       display: none;
+    }
+    
+    .navigation .navigation__links.responsive {
+       display: block;
+    }
+    .navigation .navigation__links.responsive > a{
+       display: block;
+ 
+    }
+    .container {
+        width: 96%;
+        margin-left: 2%;
+        margin-right:2%;
+    }
+    #contact-form{
+        padding:0;
+        padding-left: 10px;
+    }
+    #img_portrait{
+        width: 100%;
+    }
+    .about_col1{
+        display: block;
+        width: 100%;
+        margin:0
+    }
+    .about_col2{
+        display: block;
+        width: 100%;
+        margin:0
+    }
+    .item .skills {
+        justify-content: center;
+    }
+    .skills {
+        justify-content: center;
+    }
+    .skills p{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #about p{
+        text-align: center;
+    }
+    #about div {
+        margin-bottom: 40px;
+    }
+    #enkelcarussel p{
+        text-align: center; 
+    }
+    .portefolio{
+    
+        width:100%;
+        margin: 0;
+    }
+    #about .about_col2 {
+        margin:0
+    }
+    #about {
+        padding-bottom: 0;
+    }
+}
